@@ -1,0 +1,268 @@
+<!--A Design by W3layouts
+   Author: W3layout
+   Author URL: http://w3layouts.com
+   License: Creative Commons Attribution 3.0 Unported
+   License URL: http://creativecommons.org/licenses/by/3.0/
+   -->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <title>Akshay Utture</title>
+  <!--meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Apex Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+         Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"
+  />
+  <script>
+    addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+  </script>
+  <!--booststrap-->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+  <!--//booststrap end-->
+  <!-- font-awesome icons -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- //font-awesome icons -->
+  <!--stylesheets-->
+  <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+  <!--//stylesheets
+  <link href="//fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">-->
+</head>
+
+<body>
+  <!-- main -->
+  <div class="banner-two-img" id="home">
+    <div class=" banner-left-side">
+      <div class="logo" >
+        <h1>
+          <a href="index.html">Akshay</a>
+        </h1>
+      </div>
+      <!-- menu -->
+      <ul id="menu">
+        <li>
+          <input id="check02" type="checkbox" name="menu" />
+          <label for="check02">
+            <span class="fa fa-bars" aria-hidden="true"></span>
+          </label>
+          <ul class="submenu">
+            <li>
+              <a href="index.html" class="active">Home</a>
+            </li>
+            <li>
+              <a href="Resume.pdf">Resume</a>
+            </li>
+            <li>
+              <a href="#about">About Me</a>
+            </li>
+            <li>
+              <a href="#skills">My Research</a>
+            </li>
+            <li>
+              <a href="#blog">Blog</a>
+            </li>
+            <li>
+              <a href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!-- //menu -->
+    </div>
+    <div class="banner-right-side">
+      <!-- banner -->
+      <div class="banner-right-txt text-center">
+        <!--<h5 class="mb-2">Hello, There</h5>-->
+        <h4  style="color:#000099">Akshay Utture</h4>
+        <div class="two-demo-button mt-3">
+          <p>Programming Systems group at Uber</p>
+        </div>
+        <div class="view-buttn mt-md-4 mt-sm-4 mt-3">
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+      </div>
+      <!-- //banner -->
+      <!-- about -->
+      <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
+        <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+          <div class="position-title position-relative">
+            <h6 class="text-center top-title mb-2">My History</h6>
+            <div class="sub-position">
+              <h3 class="text-center title mb-3">Some Words About Me</h3>
+            </div>
+            <div class="title-wls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
+              <p>
+              I am a researcher and engineer who works primarily on Static Analysis, but my research interests span broadly across Compilers, Program Analysis and Verification.
+
+              I recently graduated from UCLA with a Ph.D. in Computer Science, and I will be joining Uber's <a href="https://www.uber.com/us/en/about/science/">Programming Systems Group</a>.
+               
+              At UCLA, I was a part of the <a href="http://compilers.cs.ucla.edu"> Compilers Group</a>, and I worked with my advisor <a href="https://web.cs.ucla.edu/~palsberg/">Jens Palsberg</a> on adapting static analysis tools to better meet user expectations (also the title of my thesis) on false positives, analysis time and repairability. 
+                
+                Before the Ph.D., I completed a five year Dual Degree (Integrated Bachelors & Masters) in Computer Science from the Indian Institute of Technology Madras. There I worked on the runtime design of the <a href="http://x10-lang.org/">X10</a> task-parallel programming language, and on algorithms for graph matchings. </p>
+            </div>
+          </div>
+          
+      <!-- Research  -->
+      <section class="skills py-lg-4 py-md-3 py-sm-3 py-3" id="skills">
+        <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+          <div class="position-title position-relative">
+            <h6 class="text-center top-title mb-2">What I do</h6>
+            <div class="sub-position">
+              <h3 class="text-center title mb-3">Research Work</h3>
+            </div>
+            <div class="title-wls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
+              <p>
+                My research at UCLA was primarily centered around making static analysis tools more useful in practice. Traditionally, static analysis tools have been developed as verification tools. That is, they verify that a program is guaranteed to not have a certain kind of error (like cast-check errors or null-pointer errors). Since solving this problem accurately is undecidable, they overapproximate all possible program paths. Hence they never missed any errors, but they could report some false-positives. Scalability and a low false-positive rate were also important design considerations for these tools, but these goals were secondary to the safety property (i.e. never missing an error). 
+              </p>
+              <p>
+	      However, in practice, static analysis tools are more commonly used as bug-finding tools and not verification tools. That is, these tools are used to automatically identify bugs and security vulnerabilities that are hard to test or missed during testing. In the bug-finding setting, the programmers do not expect a guarantee on the absence of errors. Further, since these verification tools cannot deal with dynamic features (eg. reflection in Java), and most modern languages have such dynamic features, such guarantees are not even feasible for most real-world programs. Instead, users care more that these tools run in a few seconds (or at most minutes) during compilation or code-review and have very low-false-positive rates. Programmers will stop using tools that take too long or report more than the occasional false warning. The following <a href="https://doi.org/10.1145/2970276.2970347"> empirical study</a> elaborates on this point in more detail.
+		</p>
+		<p>
+		While the existing verification-focused static analysis tools may not be the best fit for a bug-finding setting, they continue to be widely used because redesigning these tools, which initially took two decades of work by hundreds of researchers, is simply too cumbersome. In my opinion, the most practical approach in this situation is to adapt existing tools to the new bug-finding setting. Hence, my research at UCLA was focused on pre-processing and post-processing existing static analysis tools to prioritize a low false-positivity rate, scalability, and repairability, over the safety (i.e. absence of errors) guarantee.
+              </p>
+              <p>
+                My research work at IIT Madras was in the fields of parallel-programming languages (with <a href="http://www.cse.iitm.ac.in/~krishna/">Professor V Krishna Nandivada</a>) and graph-matching algorithms (with <a href="http://www.cse.iitm.ac.in/~meghana/">Professor Meghana Nasre</a>).
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 my-grid-awards">
+              <h5> <a href="https://doi.org/10.1145/3510003.3510046 "> Fast and Precise Application Code Analysis using a Partial Library.</a> <a href="papers/icse22_secondPaper_preprint.pdf"> [Preprint] </a></h5>
+              <h5>Akshay Utture and Jens Palsberg. In the 44th International Conference on Software Engineering (ICSE ’22), May 21–29, 2022, Pittsburgh, PA, USA. </h5>
+              <br>
+            </div>   
+            
+            <div class="col-lg-12 col-md-12 col-sm-12 my-grid-awards">
+              <h5> <a href="https://doi.org/10.1145/3510003.3510166"> Striking a Balance: Pruning False-Positives from Static Call Graphs</a> <a href="papers/icse22_firstPaper_preprint.pdf"> [Preprint] </a></h5>
+              <h5>Akshay Utture, Shuyang Liu, Christian Gram Kalhauge, and Jens Palsberg. In the 44th International Conference on Software Engineering (ICSE ’22), May 21–29, 2022, Pittsburgh, PA, USA. </h5>
+              <br>
+            </div>   
+
+
+            <div class="col-lg-12 col-md-12 col-sm-12 my-grid-awards">
+              <h5> <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/spe.2726"> Efficient lock‐step synchronization in task‐parallel languages</a> <a href="papers/spe19Preprint.pdf"> [Preprint] </a></h5>
+              <h5>Akshay Utture and V Krishna Nandivada, Software: Practice and Experience 49 (9), 1379-1401, 01 July 2019 </h5>
+              <br>
+            </div>   
+   
+            <div class="col-lg-12 col-md-12 col-sm-12 my-grid-awards">
+              <h5> <a href="https://link.springer.com/chapter/10.1007/978-3-030-34029-2_4">Student Course Allocation with Constraints</a> <a href="papers/sea19Preprint.pdf"> [Preprint] </a> </h5>
+              <h5> Akshay Utture, Vedant Somani, Prem Krishnaa and Meghana Nasre, SEA'19, June 24-29 2019, Kalamata, Greece </h5>
+              <br>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--//skills -->
+      
+      <!-- blog -->
+      <section class="blog py-lg-4 py-md-3 py-sm-3 py-3" id="blog">
+        <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+          <div class="position-title position-relative">
+            <h6 class="text-center top-title mb-2">My Blog</h6>
+            <div class="sub-position">
+              <h3 class="text-center title mb-3">Some Random Things about me</h3>
+            </div>
+          </div>
+          
+          <div class="row mt-lg-4 mt-3">
+            <div class="col-lg-6 col-md-6 col-sm-6 blog-two-two">
+              <h4 class="mb-3">
+                <a href="#contact" style="color:#800000"> <br> What kind of a researcher am I? </a>
+              </h4>
+              <p>One dimension of this question is about what kind of problems I like to work on, and I believe that there are two kinds of researchers for this. The first kind are very driven by a particular topic or research problem and would only be strongly motivated to work on that. The second kind of researcher loves solving hard problems in general, and would be happy to work on any challenging problem that matches his skill-set. I think I'm the second kind of researcher, and my ideal problem is ill-specified, open-ended, and requires design thinking.</p>
+              <p>  The second dimenion is about the kind of solutions I like to find, and again there two kinds of researchers for this. The first kind like to develop a clean, elegant solution for their problem, even if it sometimes requires simplifying the problem or working on a particular variation of it that is amenable to develop theory for. The second kind of researchers want solutions for real-world problems with real-world constraints, and are ready to accept solutions that may seem heuristic or empirically justified in nature, as long as they work well in practice. Again, I consider myself to be the second kind of researcher. I like to do whatever it takes, whether using theory or heuristics, to solve the problem at hand. </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 blog-two-two">
+              <h4 class="mb-3">
+                <a href="#contact" style="color:#800000"><br> What do I think is special about me as a researcher? </a>
+              </h4>
+              <p>Since I find several areas interesting, I also happen to know a little bit about a lot of topics - like a jack of all trades. I can talk about programming languages, software-engineering and computer architecture in depth, but I also know a decent amount about machine-learning, natural-language processing, graph-algorithms, operating systems, computer security, bio-statistics, and economics. </p>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 blog-two-two mt-3">
+              <h4 class="mb-3">
+                <a href="#contact" style="color:#800000"> <br> What are my interests outside of academia?</a>
+              </h4>
+              <p>I love talking about philosophy (sometimes a bit too much), psychology and economics, and I also love reading about them. I like travelling to meet friends and family who don't live in my city.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- blog -->
+      <!-- map-address -->
+      <section class="map-address py-3" id="contact">
+        <div class="container py-2">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 contact-w3pvt-address">
+              <div class=" footer-top">
+                <h4 class="mb-lg-4 mb-3" style="color:#000099">Contact Me</h4>
+                  <span>Email</span> : akshayutture at ucla dot edu
+              </div>
+              <!--
+              <div class="social-icons mt-lg-3 mt-2">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <span class="fa fa-facebook mr-lg-3 mr-2"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="fa fa-twitter mr-lg-3 mr-2"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="fa fa-rss mr-lg-3 mr-2"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="fa fa-envelope mr-lg-3 mr-2"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="fa fa-instagram mr-lg-3 mr-2"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            -->
+            </div>
+          </div>
+          <!-- move icon -->
+          <div class="text-right">
+            <a href="#home" class="move-top text-center mt-3">
+              <span class="fa fa-arrow-up" aria-hidden="true"></span>
+            </a>
+          </div>
+          <!--//move icon -->
+        </div>
+      </section>
+      <!--//map-address -->
+      <footer class=" py-lg-3 py-md-2 py-sm-3 py-2">
+        <div class="container pb-lg-3 pb-2">
+          <div class="bottem-txt-footer text-center pt-md-4 pt-3">
+            <p>
+              © 2019 Apex. All Rights Reserved | Design by
+              <a href="http://www.W3Layouts.com" target="_blank">W3Layouts</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+</body>
+
+</html>
